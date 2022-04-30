@@ -41,8 +41,6 @@ def pregunta_02():
     Preparación de los conjuntos de datos.
     -------------------------------------------------------------------------------------
     """
-    import train_test_split
-
     # Importe train_test_split
     from sklearn.model_selection import train_test_split
 
