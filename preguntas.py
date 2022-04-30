@@ -41,6 +41,7 @@ def pregunta_02():
     Preparación de los conjuntos de datos.
     -------------------------------------------------------------------------------------
     """
+    import train_test_split
 
     # Importe train_test_split
     from sklearn.model_selection import train_test_split
@@ -51,8 +52,8 @@ def pregunta_02():
     # Divida los datos de entrenamiento y prueba. La semilla del generador de números
     # aleatorios es 12345. Use el 10% de patrones para la muestra de prueba.
     x_train, x_test, y_train, y_test = train_test_split(
-        x_tagged,
-        y_tagged,
+        (x_tagged, x_untagged),
+        (y_tagged, y_untagged),
         test_size=0.1,
         random_state=12345,
     )
